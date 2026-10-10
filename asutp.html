@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f3f2ef">
+<title>АСУ ТП — Сатурн Технолоджи</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+/* Одинаковый вид на всех компьютерных экранах: от 1280px страница масштабируется от эталонной ширины 1440px */
+(function () {
+  var r = document.documentElement;
+  r.classList.add('js');
+  function fit() {
+    var w = window.innerWidth, h = window.innerHeight, z = w >= 1280 ? w / 1440 : 1;
+    if (z === 1) { r.style.zoom = ''; r.style.removeProperty('--vw'); r.style.removeProperty('--vh'); return; }
+    r.style.zoom = z;
+    r.style.setProperty('--vw', (w / z / 100) + 'px');
+    r.style.setProperty('--vh', (h / z / 100) + 'px');
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
+</script>
+<script src="main.js" defer></script>
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="header">
+  <a class="pill brand" href="index.html" aria-label="Сатурн Технолоджи — главная"><img class="logo" src="assets/logo.png" alt="Сатурн Технолоджи" width="1095" height="188"></a>
+  <nav id="navigation" class="notch" aria-label="Основная навигация"><a href="develop.html">Тренажер оператора</a><a href="supply.html">Поставка МТР</a><a href="asutp.html" aria-current="page">АСУ ТП</a><a href="vacancy.html">Вакансии</a><a href="contacts.html">Контакты</a></nav>
+  <a class="pill head-cta" href="contacts.html">Получить консультацию <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7 M9 7h8v8"/></svg></a>
+  <button class="pill menu" aria-expanded="false" aria-controls="navigation"><span class="menu-label">Меню</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+<main id="main">
+<section class="frame open-frame">
+  <div class="frame-bg" data-parallax style="background-image:url('assets/asutp-hero.jpg')"></div>
+  <nav class="rail" aria-label="Быстрые действия"><a href="index.html" aria-label="Главная" title="Главная"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg></a><a href="tel:+74951208818" aria-label="+7 (495) 120-88-18" title="+7 (495) 120-88-18"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2"/></svg></a><a href="mailto:info@saturn-tek.ru" aria-label="info@saturn-tek.ru" title="info@saturn-tek.ru"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6 9-6"/></svg></a><a href="https://yandex.ru/maps/?text=Москва%20Большая%20Черёмушкинская%2013%20строение%201" aria-label="Открыть на Яндекс Картах" title="Открыть на Яндекс Картах" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/></svg></a></nav>
+  <div class="open-copy">
+    <p class="kicker" data-load>САТУРН Технолоджи</p>
+    <h1 class="display"><span class="line"><span>Создание АСУ ТП и продажа измерительных приборов, средств автоматики</span></span></h1>
+    
+  </div>
+  <a class="scroll-down" href="#intro" aria-label="Перейти к содержанию" data-load><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M6 13l6 6 6-6"/></svg></a>
+</section>
+<section class="block split" id="intro">
+  <div class="split-media reveal"><div class="split-img" data-parallax style="background-image:url('assets/asutp-instruments.jpg')"></div></div>
+  <div class="split-text reveal">
+    <p class="big-text">Как независимый интегратор автоматизированных систем, мы устанавливаем на объектах продукцию тех производителей, чье оборудование отвечает всем требованиям клиента по надежности, экономичности, безопасности и цене. При этом предпочтение отдается тем инновационным автоматизированным системам, применение которых позволяет сокращать расходы клиента не только на этапе строительства и в процессе их эксплуатации, но и при последующей модернизации и обслуживании</p>
+  </div>
+</section>
+
+<section class="block split reverse">
+  <div class="split-media reveal"><div class="split-img" data-parallax style="background-image:url('assets/asutp-team.jpg')"></div><span class="models-badge"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 20v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M22 20v-1a4 4 0 0 0-3-3.9 M16 3.1a4 4 0 0 1 0 7.8"/></svg></span></span></div>
+  <div class="split-text reveal">
+    <h2 class="display-2">Сильная команда</h2>
+    <p class="big-text">Высококлассные, опытные специалисты с широким практическим опытом в сфере автоматизации технологических процессов.</p>
+    <p>За свою относительно недолгую историю компания «Сатурн — Технолоджи» накопила достаточно обширный опыт успешной реализации проектов, в которых участвовало несколько компаний подрядчиков. Этому в значительной степени помогли методики планирования, реализации, координации и<br>контроля, разработанные внутри компании.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="bento">
+    <div class="bento-title tall reveal" style="--img:url('assets/asutp-partners.jpg')">
+      <div><h2 class="display-2">Наш приоритет - партнерские отношения</h2><p>Основной целью нашей компании является установление долгосрочных партнерских отношений со своими клиентами, поэтому в своей работе мы не стремимся к сиюминутной максимизации прибыли</p></div>
+    </div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 20v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M22 20v-1a4 4 0 0 0-3-3.9 M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><h3>Команда</h3><p>Имеем в своей команде высококлассных, опытных инженеров с высшим образованием в сфере автоматизации технологических процессов</p></div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7h10v10H7z M10 10h4v4h-4z M9 3v4 M15 3v4 M9 17v4 M15 17v4 M3 9h4 M3 15h4 M17 9h4 M17 15h4"/></svg></span><h3>Технологии</h3><p>Мы сами являемся носителями технологий и ни у кого их не заимствуем</p></div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z M3 13l9 5 9-5"/></svg></span><h3>Решения</h3><p>Предлагаем как индивидуальные, так и типовые решения, которые могут быть более экономичными</p></div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1 M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><h3>Сотрудничество</h3><p>Являемся представителями ведущих производителей инженерного оборудования, что позволяет быть гибкими в выборе конкретного оборудования при реализации конкретного проекта</p></div>
+    <div class="bento-card warm wide reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 9a4 4 0 1 0-3.9 4.9L9 16H7v2H5v2H3v-3l6.1-6.1 M15 7h.01"/></svg></span><h3>Под-ключ</h3><p>Всегда готовы предложить решение “под ключ”, начиная с разработки проекта и заканчивая пуско-наладкой</p></div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-main">
+    <a class="brand" href="index.html" aria-label="Сатурн Технолоджи — главная"><img class="logo" src="assets/logo-light.png" alt="Сатурн Технолоджи" width="1095" height="188"></a>
+    <nav aria-label="Разделы"><a href="develop.html">Тренажер оператора</a><a href="supply.html">Поставка МТР</a><a href="asutp.html">АСУ ТП</a><a href="vacancy.html">Вакансии</a><a href="contacts.html">Контакты</a></nav>
+    <div class="footer-contacts"><a href="mailto:info@saturn-tek.ru">info@saturn-tek.ru</a><a href="tel:+74951208818">+7 (495) 120-88-18</a></div>
+  </div>
+  <div class="footer-bottom"><span>г. Москва, вн.тер.г. муниципальный округ Котловка, ул. Большая Черёмушкинская, д. 13, стр. 1</span><span>© САТУРН Технолоджи</span></div>
+</footer>
+</body>
+</html>

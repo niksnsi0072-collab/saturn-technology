@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f3f2ef">
+<title>Главная — Сатурн Технолоджи</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+/* Одинаковый вид на всех компьютерных экранах: от 1280px страница масштабируется от эталонной ширины 1440px */
+(function () {
+  var r = document.documentElement;
+  r.classList.add('js');
+  function fit() {
+    var w = window.innerWidth, h = window.innerHeight, z = w >= 1280 ? w / 1440 : 1;
+    if (z === 1) { r.style.zoom = ''; r.style.removeProperty('--vw'); r.style.removeProperty('--vh'); return; }
+    r.style.zoom = z;
+    r.style.setProperty('--vw', (w / z / 100) + 'px');
+    r.style.setProperty('--vh', (h / z / 100) + 'px');
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
+</script>
+<script src="main.js" defer></script>
+</head>
+<body class="home">
+<a class="skip" href="#main">К содержанию</a>
+<header class="header">
+  <a class="pill brand" href="index.html" aria-label="Сатурн Технолоджи — главная"><img class="logo" src="assets/logo.png" alt="Сатурн Технолоджи" width="1095" height="188"></a>
+  <nav id="navigation" class="notch" aria-label="Основная навигация"><a href="develop.html">Тренажер оператора</a><a href="supply.html">Поставка МТР</a><a href="asutp.html">АСУ ТП</a><a href="vacancy.html">Вакансии</a><a href="contacts.html">Контакты</a></nav>
+  <a class="pill head-cta" href="contacts.html">Получить консультацию <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7 M9 7h8v8"/></svg></a>
+  <button class="pill menu" aria-expanded="false" aria-controls="navigation"><span class="menu-label">Меню</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+<main id="main">
+<section class="frame home-frame">
+  <div class="frame-bg" data-parallax style="background-image:url('assets/hero-dusk.jpg')" role="img" aria-label="Нефтегазоперерабатывающая установка на закате"></div>
+  <nav class="rail" aria-label="Быстрые действия"><a href="index.html" aria-label="Главная" title="Главная"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg></a><a href="tel:+74951208818" aria-label="+7 (495) 120-88-18" title="+7 (495) 120-88-18"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2"/></svg></a><a href="mailto:info@saturn-tek.ru" aria-label="info@saturn-tek.ru" title="info@saturn-tek.ru"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6 9-6"/></svg></a><a href="https://yandex.ru/maps/?text=Москва%20Большая%20Черёмушкинская%2013%20строение%201" aria-label="Открыть на Яндекс Картах" title="Открыть на Яндекс Картах" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/></svg></a></nav>
+  <div class="hero-copy">
+    <p class="kicker" data-load>САТУРН ТЕХНОЛОДЖИ</p>
+    <h1 class="display mega"><span class="line"><span>Эффективность</span></span><span class="line"><span>вашего производства</span></span></h1>
+    <p class="lead" data-load>Мы используем решения отвечающие всем требованиям клиента по надежности, экономичности, безопасности и цене. При этом предпочтение отдается тем решениям, применение которых позволяет сокращать расходы клиента не только на этапе строительства и в процессе их эксплуатации, но и при последующей модернизации и обслуживании</p>
+  </div>
+</section>
+
+<section class="directions" id="directions">
+  <article class="dir-card reveal" style="--img:url('assets/trainer-dusk.jpg')">
+    <div class="glass dir-panel">
+      <h2>Тренажер оператора</h2>
+      <div class="dir-body"><div>
+      <ul class="dir-points">
+        <li>Тренажер оператора для технологических объектов с блоками I и II категории взрывоопасности согласно приказу №533 Ростехнадзора</li>
+        <li>Обучение и проверка знаний персонала перед началом работ, без риска повреждения оборудования</li>
+        <li>Повышение квалификации операторов, отработка нештатных ситуаций</li>
+      </ul>
+      </div></div>
+      <a class="more" href="develop.html">Узнать больше <span class="circle-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7 M9 7h8v8"/></svg></span></a>
+    </div>
+  </article>
+  <article class="dir-card reveal" style="--img:url('assets/asutp-dusk.jpg')">
+    <div class="glass dir-panel">
+      <h2>АСУ ТП и средства автоматизации</h2>
+      <div class="dir-body"><div>
+      <p>Разработка и реализация автоматизированных систем управления технологическими процессами, а также продажа измерительных приборов и средств автоматики</p>
+      </div></div>
+      <a class="more" href="asutp.html">Узнать больше <span class="circle-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7 M9 7h8v8"/></svg></span></a>
+    </div>
+  </article>
+  <article class="dir-card reveal" style="--img:url('assets/supply-hero.jpg')">
+    <div class="glass dir-panel">
+      <h2>Компетенции в поставке МТР</h2>
+      <div class="dir-body"><div>
+      <p>Комплексная поставка оборудования и материально-технических ресурсов при выполнении технического обслуживания, ремонта, строительства и реконструкции, а также по прямым договорам поставки</p>
+      </div></div>
+      <a class="more" href="supply.html">Узнать больше <span class="circle-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7 M9 7h8v8"/></svg></span></a>
+    </div>
+  </article>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-main">
+    <a class="brand" href="index.html" aria-label="Сатурн Технолоджи — главная"><img class="logo" src="assets/logo-light.png" alt="Сатурн Технолоджи" width="1095" height="188"></a>
+    <nav aria-label="Разделы"><a href="develop.html">Тренажер оператора</a><a href="supply.html">Поставка МТР</a><a href="asutp.html">АСУ ТП</a><a href="vacancy.html">Вакансии</a><a href="contacts.html">Контакты</a></nav>
+    <div class="footer-contacts"><a href="mailto:info@saturn-tek.ru">info@saturn-tek.ru</a><a href="tel:+74951208818">+7 (495) 120-88-18</a></div>
+  </div>
+  <div class="footer-bottom"><span>г. Москва, вн.тер.г. муниципальный округ Котловка, ул. Большая Черёмушкинская, д. 13, стр. 1</span><span>© САТУРН Технолоджи</span></div>
+</footer>
+</body>
+</html>

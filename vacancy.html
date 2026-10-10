@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f3f2ef">
+<title>Вакансии — Сатурн Технолоджи</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+/* Одинаковый вид на всех компьютерных экранах: от 1280px страница масштабируется от эталонной ширины 1440px */
+(function () {
+  var r = document.documentElement;
+  r.classList.add('js');
+  function fit() {
+    var w = window.innerWidth, h = window.innerHeight, z = w >= 1280 ? w / 1440 : 1;
+    if (z === 1) { r.style.zoom = ''; r.style.removeProperty('--vw'); r.style.removeProperty('--vh'); return; }
+    r.style.zoom = z;
+    r.style.setProperty('--vw', (w / z / 100) + 'px');
+    r.style.setProperty('--vh', (h / z / 100) + 'px');
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
+</script>
+<script src="main.js" defer></script>
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="header">
+  <a class="pill brand" href="index.html" aria-label="Сатурн Технолоджи — главная"><img class="logo" src="assets/logo.png" alt="Сатурн Технолоджи" width="1095" height="188"></a>
+  <nav id="navigation" class="notch" aria-label="Основная навигация"><a href="develop.html">Тренажер оператора</a><a href="supply.html">Поставка МТР</a><a href="asutp.html">АСУ ТП</a><a href="vacancy.html" aria-current="page">Вакансии</a><a href="contacts.html">Контакты</a></nav>
+  <a class="pill head-cta" href="contacts.html">Получить консультацию <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7 M9 7h8v8"/></svg></a>
+  <button class="pill menu" aria-expanded="false" aria-controls="navigation"><span class="menu-label">Меню</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+<main id="main">
+<section class="frame open-frame">
+  <div class="frame-bg" data-parallax style="background-image:url('assets/vacancy-hero.jpg')"></div>
+  <nav class="rail" aria-label="Быстрые действия"><a href="index.html" aria-label="Главная" title="Главная"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg></a><a href="tel:+74951208818" aria-label="+7 (495) 120-88-18" title="+7 (495) 120-88-18"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2"/></svg></a><a href="mailto:info@saturn-tek.ru" aria-label="info@saturn-tek.ru" title="info@saturn-tek.ru"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6 9-6"/></svg></a><a href="https://yandex.ru/maps/?text=Москва%20Большая%20Черёмушкинская%2013%20строение%201" aria-label="Открыть на Яндекс Картах" title="Открыть на Яндекс Картах" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/></svg></a></nav>
+  <div class="open-copy">
+    <p class="kicker" data-load>САТУРН Технолоджи</p>
+    <h1 class="display"><span class="line"><span>Вакансии</span></span></h1>
+    
+  </div>
+  <a class="scroll-down" href="#jobs" aria-label="Перейти к содержанию" data-load><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M6 13l6 6 6-6"/></svg></a>
+</section>
+<section class="jobs reveal" id="jobs">
+  <details class="job">
+    <summary><span class="job-number">01</span><div class="job-head"><h2>Разработчик .Net</h2><p class="job-summary">Разработка микросервисного ядра приложений, с применением RabbitMQ, Postgres, микросервисов и оптимизация его для работы под нагрузкой</p></div><span class="job-more">подробнее</span><span class="plus" aria-hidden="true"></span></summary>
+    <div class="job-content">
+      <p>Мы открываем новое направление в деятельности компании – создание программного обеспечения для автоматизации производства и повышения качества управления технологическими процессами для крупных предприятий в нефтегазовой отрасли.</p><p>В настоящее время мы выпустили первую версию продукта и расширяем команду, для того чтобы сделать процесс разработки более технологичным и эффективным.</p><p>Если вам интересно быть частью команды, разрабатывающей продукты для нефтегаза и быть у истоков создание целой серии программных продуктов, то мы ждем вашего отклика.</p><p>Первым шагом будет участие в портировании разработанного продукта на платформу Linux (без необходимости максимального сохранения унаследованного кода, а целью максимально эффективного дальнейшего развития продукта).</p>
+      <h3>Требования к кандидату</h3><ul><li>Не менее 3х лет в роли разработчика\ведущего разработчика ПО;</li><li>Знание C# и ASP .NET Core;</li><li>Желателен опыт разработки React;</li><li>Опыт использования контейнеров;</li><li>Знание SQL и одной из реляционных (желательно Postgres);</li><li>Знание классических алгоритмов и структур данных;</li><li>Знание Dependency Injection и ORM;</li><li>Опыт работы в команде разработки, с хорошо настроенными процессами.</li></ul>
+      <h3>Мы предлагаем</h3><ul><li>Гибридный график работы (1 день в офисе все командой);</li><li>Возможность роста и быть одним из лидеров команды, создающей новые продукты для промышленности;</li><li>Поддержка и помощь в поиске точек роста и карьерном развитии;</li><li>Полис ДМС после испытательного срока;</li><li>Достойную зарплату, обсуждается на собеседовании.</li><li>Возможность работать как из Москвы так и из Санкт-Петербурга</li></ul>
+    </div>
+  </details><details class="job">
+    <summary><span class="job-number">02</span><div class="job-head"><h2>Разработчик Frontend (React)</h2><p class="job-summary">Разработка пользовательского интерфейса с использованием лучших практики по UX\UI и создание сложных элементов для визуализации технологических процессов</p></div><span class="job-more">подробнее</span><span class="plus" aria-hidden="true"></span></summary>
+    <div class="job-content">
+      <p>Мы открываем новое направление в деятельности компании – создание программного обеспечения для автоматизации производства и повышения качества управления технологическими процессами для крупных предприятий в нефтегазовой отрасли.</p><p>В настоящее время мы выпустили первую версию продукта и расширяем команду, для того чтобы сделать процесс разработки более технологичным и эффективным.</p><p>Если вам интересно быть частью команды, разрабатывающей продукты для нефтегаза и быть у истоков создание целой серии программных продуктов, то мы ждем вашего отклика.</p>
+      <h3>Требования к кандидату</h3><ul><li>Не менее 3х лет в роли разработчика\ведущего разработчика ПО;</li><li>Знаниe JS, TS, React;</li><li>Желателен опыт работы с online данными и создания сложных кастомных контролов;</li><li>Понимание принципов Continuous Integration и умение обеспечить качество приложения;</li><li>Знание подхода Backend for Frontend</li><li>Знание классических алгоритмов и структур данных;</li><li>Опыт работы в команде разработки, с хорошо настроенными процессами.</li></ul>
+      <h3>Мы предлагаем</h3><ul><li>Гибридный график работы (1 день в офисе все командой);</li><li>Возможность роста и быть одним из лидеров команды, создающей новые продукты для промышленности;</li><li>Поддержка и помощь в поиске точек роста и карьерном развитии;</li><li>Полис ДМС после испытательного срока;</li><li>Достойную зарплату, обсуждается на собеседовании.</li><li>Возможность работать как из Москвы так и из Санкт-Петербурга</li></ul>
+    </div>
+  </details><details class="job">
+    <summary><span class="job-number">03</span><div class="job-head"><h2>Системный аналитик</h2><p class="job-summary">Проработка и детализация требований к системе. Проектирование ключевых алгоритмов и структур данных совместно с командой</p></div><span class="job-more">подробнее</span><span class="plus" aria-hidden="true"></span></summary>
+    <div class="job-content">
+      <p>Мы открываем новое направление в деятельности компании – создание программного обеспечения для автоматизации производства и повышения качества управления технологическими процессами для крупных предприятий в нефтегазовой отрасли.</p><p>В настоящее время мы выпустили первую версию продукта и расширяем команду, для того чтобы сделать процесс разработки более технологичным и эффективным.</p><p>Если вам интересно быть частью команды, разрабатывающей продукты для нефтегаза и быть у истоков создание целой серии программных продуктов, то мы ждем вашего отклика.</p><p>Первым шагом будет участие в портировании разработанного продукта на платформу Linux (без необходимости максимального сохранения унаследованного кода, а целью максимально эффективного дальнейшего развития продукта).</p>
+      <h3>Требования к кандидату</h3><ul><li>Опыт работы системным аналитиком от 3 лет</li><li>Навыки анализа процессов и написания технических требований</li><li>Навык верхнеуровнего проектирования систем и описания интеграционного взаимодействия</li><li>Опыт работы с SOAP/REST, брокерами сообщений</li><li>Владение нотациями описания процессов и алгоритмов</li><li>Знание SQL, опыт проектирования БД будет плюсом.</li></ul>
+      <h3>Мы предлагаем</h3><ul><li>Участие в проработке требований к системе и ее проектировании</li><li>Гибридный график работы (1 день в офисе все командой);</li><li>Возможность роста и быть одним из лидеров команды, создающей новые продукты для промышленности;</li><li>Поддержка и помощь в поиске точек роста и карьерном развитии;</li><li>Полис ДМС после испытательного срока;</li><li>Достойную зарплату, обсуждается на собеседовании.</li><li>Возможность работать как из Москвы так и из Санкт-Петербурга</li></ul>
+    </div>
+  </details><details class="job">
+    <summary><span class="job-number">04</span><div class="job-head"><h2>Тестировщик</h2><p class="job-summary">Организация тестирования продукта и постепенная автоматизация данного процесса</p></div><span class="job-more">подробнее</span><span class="plus" aria-hidden="true"></span></summary>
+    <div class="job-content">
+      <p>Мы открываем новое направление в деятельности компании – создание программного обеспечения для автоматизации производства и повышения качества управления технологическими процессами для крупных предприятий в нефтегазовой отрасли.</p><p>В настоящее время мы выпустили первую версию продукта и расширяем команду, для того чтобы сделать процесс разработки более технологичным и эффективным.</p><p>Если вам интересно быть частью команды, разрабатывающей продукты для нефтегаза и быть у истоков создание целой серии программных продуктов, то мы ждем вашего отклика.</p><p>Первым шагом будет участие в портировании разработанного продукта на платформу Linux (без необходимости максимального сохранения унаследованного кода, а целью максимально эффективного дальнейшего развития продукта).</p>
+      <h3>Требования к кандидату</h3><ul><li>Опыт ручного тестирования Web приложений</li><li>Опыт работы с реляционными БД</li><li>Понимание принципов работы HTTP\HTTPS протоколов и умение тестировать API</li><li>Навыки тест-дизайна</li><li>Навыки анализа с логов для поиска ошибок</li><li>Желание развиваться в области автоматизации тестирования.</li></ul>
+      <h3>Мы предлагаем</h3><ul><li>Гибридный график работы (1 день в офисе все командой);</li><li>Возможность роста и быть одним из лидеров команды, создающей новые продукты для промышленности;</li><li>Поддержка и помощь в поиске точек роста и карьерном развитии;</li><li>Полис ДМС после испытательного срока;</li><li>Достойную зарплату, обсуждается на собеседовании.</li><li>Возможность работать как из Москвы так и из Санкт-Петербурга</li></ul>
+    </div>
+  </details>
+</section>
+<section class="resume reveal">
+  <a class="button primary magnetic" href="mailto:saturnrutech@gmail.com">Отправить резюме <span class="circle-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7 M9 7h8v8"/></svg></span></a>
+  <a class="resume-mail" href="mailto:saturnrutech@gmail.com">saturnrutech@gmail.com</a>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-main">
+    <a class="brand" href="index.html" aria-label="Сатурн Технолоджи — главная"><img class="logo" src="assets/logo-light.png" alt="Сатурн Технолоджи" width="1095" height="188"></a>
+    <nav aria-label="Разделы"><a href="develop.html">Тренажер оператора</a><a href="supply.html">Поставка МТР</a><a href="asutp.html">АСУ ТП</a><a href="vacancy.html">Вакансии</a><a href="contacts.html">Контакты</a></nav>
+    <div class="footer-contacts"><a href="mailto:info@saturn-tek.ru">info@saturn-tek.ru</a><a href="tel:+74951208818">+7 (495) 120-88-18</a></div>
+  </div>
+  <div class="footer-bottom"><span>г. Москва, вн.тер.г. муниципальный округ Котловка, ул. Большая Черёмушкинская, д. 13, стр. 1</span><span>© САТУРН Технолоджи</span></div>
+</footer>
+</body>
+</html>

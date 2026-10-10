@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f3f2ef">
+<title>Тренажер оператора — Сатурн Технолоджи</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+/* Одинаковый вид на всех компьютерных экранах: от 1280px страница масштабируется от эталонной ширины 1440px */
+(function () {
+  var r = document.documentElement;
+  r.classList.add('js');
+  function fit() {
+    var w = window.innerWidth, h = window.innerHeight, z = w >= 1280 ? w / 1440 : 1;
+    if (z === 1) { r.style.zoom = ''; r.style.removeProperty('--vw'); r.style.removeProperty('--vh'); return; }
+    r.style.zoom = z;
+    r.style.setProperty('--vw', (w / z / 100) + 'px');
+    r.style.setProperty('--vh', (h / z / 100) + 'px');
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
+</script>
+<script src="main.js" defer></script>
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="header">
+  <a class="pill brand" href="index.html" aria-label="Сатурн Технолоджи — главная"><img class="logo" src="assets/logo.png" alt="Сатурн Технолоджи" width="1095" height="188"></a>
+  <nav id="navigation" class="notch" aria-label="Основная навигация"><a href="develop.html" aria-current="page">Тренажер оператора</a><a href="supply.html">Поставка МТР</a><a href="asutp.html">АСУ ТП</a><a href="vacancy.html">Вакансии</a><a href="contacts.html">Контакты</a></nav>
+  <a class="pill head-cta" href="contacts.html">Получить консультацию <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7 M9 7h8v8"/></svg></a>
+  <button class="pill menu" aria-expanded="false" aria-controls="navigation"><span class="menu-label">Меню</span><span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+<main id="main">
+<section class="frame open-frame">
+  <div class="frame-bg" data-parallax style="background-image:url('assets/trainer-dusk.jpg')"></div>
+  <nav class="rail" aria-label="Быстрые действия"><a href="index.html" aria-label="Главная" title="Главная"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg></a><a href="tel:+74951208818" aria-label="+7 (495) 120-88-18" title="+7 (495) 120-88-18"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2"/></svg></a><a href="mailto:info@saturn-tek.ru" aria-label="info@saturn-tek.ru" title="info@saturn-tek.ru"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 7l9 6 9-6"/></svg></a><a href="https://yandex.ru/maps/?text=Москва%20Большая%20Черёмушкинская%2013%20строение%201" aria-label="Открыть на Яндекс Картах" title="Открыть на Яндекс Картах" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/></svg></a></nav>
+  <div class="open-copy">
+    <p class="kicker" data-load>Сатурн Технолоджи</p>
+    <h1 class="display"><span class="line"><span>Тренажер оператора АСУ ТП</span></span></h1>
+    <p class="lead" data-load>Ваши сотрудники готовы к любым ситуациям</p>
+  </div>
+  <a class="scroll-down" href="#features" aria-label="Перейти к содержанию" data-load><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14 M6 13l6 6 6-6"/></svg></a>
+</section>
+<section class="block" id="features">
+  <div class="bento">
+    <div class="bento-title reveal" style="--img:url('assets/trainer-features.jpg')"><h2 class="display-2">Основные возможности тренажера</h2></div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6 M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3 M7.5 14h9"/></svg></span><h3>Моделирование</h3><p>Имитация технологических процессов, работу АСУ ТП и СПАЗ, а также интерфейс АСУ ТП ( в случае наличия такой потребности)</p></div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z M6 11v5c3 2 9 2 12 0v-5 M22 9v6"/></svg></span><h3>Обучение</h3><p>Проводить как самостоятельное обучение по заданным сценариям, так и обучение под руководством инструктора</p></div>
+    <div class="bento-card warm reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l10 18H2z M12 10v5 M12 18h.01"/></svg></span><h3>Нештатные ситуации</h3><p>Имитация неисправности оборудования, каналов управления и блоков АСУ ТП. Возможность задания ситуаций согласно ПЛАС.</p></div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6v3H9z M7 4.5H5V21h14V4.5h-2 M9 14l2 2 4-4"/></svg></span><h3>Система обучения</h3><p>Проводить плановые и внеплановые проверки знаний (отработку сценариев и прохождение тестов)</p></div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7 M20 4v7h-7"/></svg></span><h3>Навыки всегда актуальны</h3><p>Восстанавливать навыки управления после длительного перерыва (отпуск, вахта, болезнь)</p></div>
+    <div class="bento-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z M9 12l2 2 4-4"/></svg></span><h3>Минимизация рисков</h3><p>Организовывать проверки режимов работы комплекса, без риска повреждения оборудования</p></div>
+  </div>
+</section>
+
+<section class="frame order-frame reveal">
+  <div class="frame-bg" data-parallax style="background-image:url('assets/trainer-order.jpg')"></div>
+  <div class="glass order-panel">
+    <h2>Соответсвие приказу Ростехнадзора №533 от 15 декабря 2020 года</h2>
+    <p>Согласно приказу Ростехнадзора на технологических объектах с блоками I и II категории взрывоопасности все сотрудники, непосредственно ведущие технологический процесс, должны проходить обучение на тренажерах, содержащих максимально приближенные к реальным динамические модели процессов.</p>
+    <p>Внедрение тренажерного комплекса позволит вашему предприятию соответствовать данным требованиям</p>
+  </div>
+  <figure class="order-doc"><img src="assets/rtn-order-533.jpg" alt="Приказ Ростехнадзора №533 от 15 декабря 2020 года" loading="lazy" width="1321" height="760"></figure>
+</section>
+
+<section class="block models">
+  <div class="models-media reveal"><div class="models-img" data-parallax style="background-image:url('assets/trainer-models.jpg')"></div><span class="models-badge"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span></span></div>
+  <div class="models-text">
+    <h2 class="display-2 reveal">Динамические модели процессов</h2>
+    <ul class="models-steps" data-progress>
+      <li class="reveal">В составе тренажера используются динамические модели технологических процессов. Эти модели основаны на физико-химических моделях процессов происходящих в технологическом оборудовании.</li>
+      <li class="reveal">Базовые модели актуализируются на этапе проектирования, в соответствии с особенностями конкретного технологического объекта заказчика.</li>
+      <li class="reveal">Тонкая настройка моделей может производится путем автоматического сбора данных и подстройке параметров моделей на основе данных реальной АСУ ТП.</li>
+      <li class="reveal">Тренажер подготовит Ваш персонал к управлению технологическим комплексом в штатных и пусковых режимах работы, принятию необходимых мер при возникновении нештатных и аварийных ситуаций.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="block-head reveal">
+    <h2 class="display-2">Интеграция с любой системой АСУ ТП</h2>
+    <p>Тренажер может использоватсья в двух режимах:</p>
+  </div>
+  <div class="mode-grid">
+    <div class="mode-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1 M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><p>в режиме интеграции с существующей АСУ ТП, когда она выступает в качестве интерфейса, а тренажер моделирует только работу оборудования.</p></div>
+    <div class="mode-card reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v6H4z M4 14h16v6H4z M8 7h.01 M8 17h.01 M12 7h4 M12 17h4"/></svg></span><p>в независимом режиме - когда тренажер также эмулирует и АСУ ТП, что особенно важно в случае когда невозможна полноценная работа с ушедшим с российского рынка вендором.</p></div>
+  </div>
+  <div class="import-card reveal">
+    <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4 M16 8l4 4-4 4 M14 5l-4 14"/></svg></span>
+    <div><h2>Импортозамещение</h2><p>Тренажер полностью российская разработка, базирующиеся на компонентах и продуктах с открытым исходным кодом. Это позволяет ей быть устойчивой и независимой при любой ситуации на рынке.</p></div>
+  </div>
+</section>
+
+<section class="block architecture">
+  <div class="block-head reveal">
+    <h2 class="display-2">Архитектура решения</h2>
+    <p>Архитектура решения постоянно развивается и эволюционирует, для максимально полного удовлетворения требований раших заказчиков</p>
+  </div>
+  <figure class="diagram reveal">
+    <a href="assets/trainer-architecture.png" target="_blank" rel="noopener"><img src="assets/trainer-architecture.png" alt="Архитектура решения: клиенты экзаменатора и обучаемых, сервер моделирования, сервер БД и бизнес логики, опциональный SCADA сервер, клиент настройки и конфигурирования, технологический сегмент с серверами АСУ ТП. Технологии: Astra Linux, .Net, Postgre SQL и использование SCADA систем в качестве интерфейса для обучения" loading="lazy" width="1680" height="1096"></a>
+  </figure>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-main">
+    <a class="brand" href="index.html" aria-label="Сатурн Технолоджи — главная"><img class="logo" src="assets/logo-light.png" alt="Сатурн Технолоджи" width="1095" height="188"></a>
+    <nav aria-label="Разделы"><a href="develop.html">Тренажер оператора</a><a href="supply.html">Поставка МТР</a><a href="asutp.html">АСУ ТП</a><a href="vacancy.html">Вакансии</a><a href="contacts.html">Контакты</a></nav>
+    <div class="footer-contacts"><a href="mailto:info@saturn-tek.ru">info@saturn-tek.ru</a><a href="tel:+74951208818">+7 (495) 120-88-18</a></div>
+  </div>
+  <div class="footer-bottom"><span>г. Москва, вн.тер.г. муниципальный округ Котловка, ул. Большая Черёмушкинская, д. 13, стр. 1</span><span>© САТУРН Технолоджи</span></div>
+</footer>
+</body>
+</html>

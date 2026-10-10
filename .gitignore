@@ -1,0 +1,10 @@
+# Исходники картинок (на сайте используются облегчённые JPG)
+assets/0*.png
+assets/1*.png
+# Старые и временные файлы, которые сайт не использует
+assets/original-*.png
+assets/industrial-grid.png
+assets/hero-plant.jpg
+assets/hero-plant-small.jpg
+assets/supply-dusk.jpg
+assets/trainer-screens.jpg
